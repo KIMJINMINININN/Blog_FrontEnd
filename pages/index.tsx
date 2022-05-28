@@ -1,7 +1,9 @@
 import React from "react";
 import { NextPage } from "next";
+import Main from "../components/Main";
 
-const index: NextPage = () => {
+const app: NextPage = () => {
+  return <Main />;
 };
 
-export default index;
+export default app;
