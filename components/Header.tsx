@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "./Header";
 
 const Container = styled.div`
   display: flex;
@@ -12,14 +11,12 @@ const Container = styled.div`
     font-size: 21px;
   }
 `;
-
-const Main: React.FC = () => {
+const Header: React.FC = () => {
   return (
     <Container>
-      <Header />
-      <h1>김길현씨김길현씨김길현씨김길현씨김길현씨김길현씨</h1>
+      <h1>WE'RE BLOG</h1>
     </Container>
   );
 };
 
-export default Main;
+export default Header;
