@@ -4,8 +4,10 @@ import {
 } from "react-redux";
 import { HYDRATE, createWrapper } from "next-redux-wrapper";
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
+import list from "./list";
 
 const rootReducer = combineReducers({
+  list: list.reducer,
 });
 
 const reducer = (state : any, action : any) => {

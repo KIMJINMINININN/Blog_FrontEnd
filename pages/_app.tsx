@@ -5,7 +5,7 @@ import { wrapper } from "../store";
 const app = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle /> 
       <Component {...pageProps} />
     </>
   );

@@ -39,5 +39,3 @@ start
 ```
     yarn start
 ```
-
----

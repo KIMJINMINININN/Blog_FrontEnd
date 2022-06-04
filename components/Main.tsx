@@ -1,23 +1,25 @@
 import React from "react";
+import Link from "next/link";
 import styled from "styled-components";
 import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
 
 const Container = styled.div`
-  display: flex;
+  /* display: flex; */
   align-items: center;
   width: 100%;
-  height: 52px;
-  padding: 0 12px;
-  h1 {
-    font-size: 21px;
-  }
+  height: 100%;
 `;
 
 const Main: React.FC = () => {
   return (
     <Container>
       <Header />
-      <h1>김길현씨김길현씨김길현씨김길현씨김길현씨김길현씨</h1>
+      <Link href="/test">
+        <Content />
+      </Link>
+      <Footer />
     </Container>
   );
 };

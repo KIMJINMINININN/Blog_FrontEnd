@@ -1,25 +1,29 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { ListType } from "../types/list";
 
-interface ListReduxState {
-  Lists: ListType[];
-}
-
 //* 초기 상태
-const initialState: ListReduxState = {
-  Lists: [],
+const initialState: ListType = {
+  id: 0,
+  title: "",
+  text: "",
+  writer: "",
+  tag: "",
+  classification: "",
+  comment: "",
+  likes: 0,
+  count: 0
 };
 
-const List = createSlice({
-  name: "List",
+const list = createSlice({
+  name: "list",
   initialState,
   reducers: {
-    setList(state, action: PayloadAction<ListType[]>) {
-      state.Lists = action.payload;
+    setCount(state:any, action: PayloadAction<ListType>) {
+      state.count = action.payload;
     },
   },
 });
 
-export const ListActions = { ...List.actions };
+export const listActions = { ...list.actions };
 
-export default List;
+export default list;
