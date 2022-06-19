@@ -10,7 +10,7 @@ const Container = styled.div`
     font-size: 21px;
     cursor: pointer;
   }
-  article{
+  .content-article{
     max-width: 1080px;
     margin: 0 auto;
   }
